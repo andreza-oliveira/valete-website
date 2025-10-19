@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Valete - Full House</title>
+
+  <!-- Chamada da logo -->
+  <link rel="shortcut icon" href="./imagens/Logo_valete_simples.png">
+
+  <!-- Chamada do Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Albert+Sans&family=League+Spartan&display=swap" rel="stylesheet">
+
+  <!-- chamada da css -->
+  <link rel="stylesheet" href="./css/style.css">
+
+  <!-- bootstrap css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+</head>
+
+<body class="body">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <!-- logo -->
+      <a class="navbar-brand fs-2" href="#">
+        <img src="./imagens/Logo_valete.png" alt="logo valete" height="80">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#sobre">Sobre</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Galeria</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#carouselIndicators">Imagens</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#videos">Vídeos</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#arma">Arma</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#hardware">Hardware</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- hero -->
+<section class="hero py-5" id="hero">
+  <div class="container">
+    <div class="row align-items-center flex-md-row flex-column-reverse text-center text-md-start">
+
+      <!-- Texto do hero -->
+      <div class="col-md-6 mb-4 mb-md-0">
+        <h1 class="hero-title fw-bold">PREPARE-SE PARA UM JOGO DE CARTAS:</h1> <!-- Classe personalizada para o título -->
+        <p class="text-hero">O robô destinado a estourar a concorrência</p>
+        <div class="d-grid gap-2">
+          <a href="#sobre" class="btn-ver btn-lg px-4">VER MAIS</a>
+        </div>
+      </div>
+
+      <!-- Imagem do hero -->
+      <div class="container-hero col-md-6 d-flex justify-content-center">
+        <img src="./imagens/Cartas.png" alt="Imagem de cartas">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- sobre o robô -->
+<section class="about-section" id="sobre">
+  <h1 class="section-title">SOBRE O ROBÔ</h1>
+  <div class="project-button-wrapper">
+    <span class="project-button">PROJETO</span>
+  </div>
+  <div class="content-wrapper">
+    <div class="description">
+      <p>
+        O projeto consiste na construção de um <strong>robô móvel autônomo</strong>, controlado remotamente por um
+        dispositivo Android, com o objetivo de participar de uma competição de robótica.
+        A principal função do robô é <strong>localizar e estourar o balão do adversário</strong>, utilizando
+        estratégias de ataque e movimentação.
+        Para isso, o robô será <strong>equipado com mecanismos e sensores</strong> que permitirão sua locomoção e a
+        execução de ações específicas.
+      </p>
+      <a href="#hardware" class="materials-button">MATERIAIS</a>
+    </div>
+
+    <div class="dimensions">
+      <h2 class="dimensions-title">DIMENSÕES</h2>
+      <table class="table table-bordered table-custom">
+        <thead>
+          <tr>
+            <th></th>
+            <th>ESTRUTURA</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>LARGURA</td>
+            <td>30cm</td>
+          </tr>
+          <tr>
+            <td>ALTURA</td>
+            <td>20cm</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- texto -->
+  <div class="ideia-text">
+    <h1 class="section-title">IDEIA</h1>
+    <p>
+      Escolhemos a temática de jogo de cartas porque todos os jogos de baralho exigem estratégia, um elemento
+      essencial para o nosso desafio no RoboCup. Nosso robô leva o nome de Valete, uma carta que simboliza tanto
+      habilidade quanto apoio, posicionando-se entre o Rei e a Dama e refletindo o equilíbrio entre força e estratégia
+      em um jogo de cartas.
+    </p>
+    <p>
+      Para nós, esse nome encapsula a essência do nosso grupo: desejamos ser habilidosos, ágeis e sempre prontos para
+      apoiar uns aos outros, assim como o Valete no baralho.
+    </p>
+  </div>
+
+  <!-- cards -->
+  <div class="sobre-cards-container">
+    <!-- Card 1 -->
+    <div class="card-custom">
+      <h2 class="card-title">Solta a carta baralho</h2>
+      <p class="card-text">
+        Valete não precisa do tigrinho para soltar a carta na manga.
+        Quando o Valete entra na arena, a competição sabe que a sorte acabou.
+      </p>
+    </div>
+
+    <!-- Card 2 (Imagem) -->
+    <div class="card-custom">
+      <img src="./imagens/valete-de-copas.png" alt="Imagem de uma carta do baralho" class="card-image">
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card-custom">
+      <h2 class="card-title">O mestre da emboscada</h2>
+      <p class="card-text">
+        Equipado com 8 sensores de alta precisão, o Valete antecipa cada movimento do oponente.
+        Ao menor toque, a arma de pontas de estilete é ativada instantaneamente, garantindo um ataque rápido e certeiro.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section class="grupo-section">
+  <h1 class="titulo-equipe">CONHEÇA A NOSSA EQUIPE</h1>
+  
+  <div class="estrelas">★ ★ ★ ★ ★</div>
+
+  <div class="grupo-container">
+    <div class="integrante">
+      <img src="./imagens/andreza.png" alt="Andreza Oliveira">
+      <p class="nome-integrante">ANDREZA OLIVEIRA</p>
+    </div>
+    <div class="integrante">
+      <img src="./imagens/aline.png" alt="Aline Alves">
+      <p class="nome-integrante">ALINE ALVES</p>
+    </div>
+    <div class="integrante">
+      <img src="./imagens/gabriel.png" alt="Gabriel Gomes">
+      <p class="nome-integrante">GABRIEL GOMES</p>
+    </div>
+    <div class="integrante">
+      <img src="./imagens/gustavo.png" alt="Gustavo Cardena">
+      <p class="nome-integrante">GUSTAVO CARDENA</p>
+    </div>
+    <div class="integrante">
+      <img src="./imagens/heitor.png" alt="Heitor Pires">
+      <p class="nome-integrante">HEITOR PIRES</p>
+    </div>
+    <div class="integrante">
+      <img src="./imagens/leticia.png" alt="Letícia Sousa">
+      <p class="nome-integrante">LETÍCIA SOUSA</p>
+    </div>
+  </div>
+
+  <button class="expandir-texto btn btn-danger mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#textoApresentacao">
+    Clique para saber mais
+  </button>
+  
+  <div id="textoApresentacao" class="collapse mt-3">
+    <div class="card card-body">
+      <p>Somos um grupo apaixonado por tecnologia e inovação, que se uniu para criar o Valete, um robô estratégico que combina habilidade e inteligência para se destacar na competição.</p>
+      <p>Nosso time é formado por indivíduos determinados, que acreditam na colaboração e no trabalho em equipe como os maiores trunfos para alcançar o sucesso.</p>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+  
+  <!-- galeria -->
+  <section class="galeria-section py-5" id="galeria">
+    <div class="container galeria-white">
+      <div class="row align-items-center g-4">
+        <h1 class="galeria-title">GALERIA</h1>
+
+        <!-- carrossel-->
+        <div id="carouselIndicators" class="carousel slide mx-auto d-block" data-bs-ride="carousel"
+          data-bs-interval="3000" data-bs-pause="false">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="3"
+              aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="4"
+              aria-label="Slide 5"></button>
+          </div>
+          <div class="carousel-inner rounded shadow">
+            <div class="carousel-item active">
+              <img src="./imagens/Robô - foto finalizado.png" class="d-block w-100" alt="Robô finalizado">
+            </div>
+            <div class="carousel-item">
+              <img src="./imagens/Robô - img arma.png" class="d-block w-100" alt="Robô real visto de cima com arma aberta">
+            </div>
+            <div class="carousel-item">
+              <img src="./imagens/Robô - cima aberto.png" class="d-block w-100"
+                alt="Robô visto de cima com arma aberta">
+            </div>
+            <div class="carousel-item">
+              <img src="./imagens/Robô - lado fechado.jpg" class="d-block w-100"
+                alt="Robô visto de lado com arma fechada">
+            </div>
+            <div class="carousel-item">
+              <img src="./imagens/visao-lateral-arma.png" class="d-block w-100"
+                alt="Robô visto de lado com arma aberta">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Próximo</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Vídeos -->
+      <div id="videos" class="video-container d-flex justify-content-center gap-4 flex-wrap">
+        <div class="video-box p-2" style="width: 500px;">
+          <div class="ratio ratio-16x9">
+            <iframe src="https://www.youtube.com/embed/iWe1Eoa4Zrg?si=kRoZA3dv7ishRUWu&amp;controls=0" title="Vídeo 1"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="video-box p-2" style="width: 500px;">
+          <div class="ratio ratio-16x9">
+            <iframe src="https://www.youtube.com/embed/-nS0qRZEH1o?si=VRX532rdD8Jl72Ys&amp;controls=0" title="Vídeo 2"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- Arma -->
+  <section class="arma-section" id="arma">
+    <div class="arma-overlay">
+      <h1 class="arma-title">ARMA</h1>
+      <div class="arma-conteudo">
+        <div class="arma-text">
+          <p>
+            A arma escolhida para o ataque do Valete são os leques, que se abrem rapidamente, revelando estiletes
+            estrategicamente posicionados nas extremidades.
+          </p>
+          <p>
+            Ao se aproximar do oponente, o robô utiliza os leques para canalizar a força do movimento em direção ao
+            balão inimigo. Ao perfurar o balão com suas agulhas, ele garante um estouro instantâneo.
+          </p>
+        </div>
+        <div class="arma-image">
+          <img src="./imagens/arma-transparente.png" alt="Protótipo do robô com arma">
+        </div>
+      </div>
+      <div class="accordion mt-4" id="accordionArma">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button custom-accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Como os leques funcionam?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionArma">
+            <div class="accordion-body">
+              Os leques se abrem ao comando do controle através do celular(android), revelando estiletes ocultos nas pontas.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed custom-accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Qual o material usado?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionArma">
+            <div class="accordion-body">
+              Os estiletes são de aço inox com ponta afiada.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed custom-accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Como ele perfura o balão?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionArma">
+            <div class="accordion-body">
+              O movimento giratório e direcionado do robô impulsiona o leque com precisão até o balão inimigo, garantindo um impacto direto com as pontas afiadas.
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+
+  <!-- hardware -->
+  <section class="hardware-section py-5" id="hardware">
+    <div class="container">
+      <h1 class="section-title">HARDWARE</h1>
+      <table class="table table-bordered table-custom">
+        <thead>
+          <tr>
+            <th>PRODUTO</th>
+            <th>QTD</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Arduino Mega 2560</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>Bateria de lítio</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>Chaves de fim de curso</td>
+            <td>8</td>
+          </tr>
+          <tr>
+            <td>Chave liga/desliga</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>Fita LED RGB 5050, 12V, 5 metros</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>Leques</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>Motor DC (eixo duplo, com caixa de redução e rodas)</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>Protoboard 400 pontos</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>Refis de estilete</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <td>Resistores de filme de carbono CR25, 1/4W, 5% tolerância, 4K7 (4700 ohms)</td>
+            <td>6</td>
+          </tr>
+          <tr>
+            <td>Roda boba</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>Servomotores MG995 (metal gear, 11 kg, engrenagem de metal)</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>Shield Bluetooth HC-06</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>Shield de motor</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>Socket para bateria</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>Transistores BD135</td>
+            <td>3</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+
+  <!-- rodapé -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="./imagens/Logo_valete_simples.png" alt="Valete logo">
+      </div>
+      <ul class="footer-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#arma">Arma</a></li>
+        <li><a href="#hardware">Hardware</a></li>
+      </ul>
+      <div class="footer-organization">
+        <p>Organização</p>
+        <img src="./imagens/logo fiap.PNG" alt="FIAP logo">
+      </div>
+    </div>
+  </footer>
+
+  <!-- bootstrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,625 @@
+:root {
+  --body-font: "League Spartan", sans-serif;
+  --color-letter: #5b5247;
+  --color-letter-strong: #4a4032;
+  --color-letter-light: #af9d81;
+  --color-body-background: #f9f0e1;
+  --color-dark-background: #c3b6a9;
+  --color-light: white;
+  --color-red: #c21e2e;
+  --color-light-red: #c54b57;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+.body {
+  font-family: var(--body-font);
+  color: var(--color-letter);
+  background-color: var(--color-body-background);
+  font-size: 1.6rem;
+}
+
+/* Deixando Bootstrap mais clean */
+a:focus,
+a:active{
+  background-color: transparent !important;
+}
+
+.accordion-button:not(.collapsed),
+.accordion-button:focus {
+  background-color: var(--color-light) !important;
+  color: var(--color-red) !important;
+  box-shadow: none !important;
+}                                                                                   
+
+/* Navbar */
+nav {
+  background-color: var(--color-dark-background);
+}
+
+.nav-item .nav-link {
+  color: var(--color-letter-strong);
+  font-size: 2.2rem;
+}
+
+.nav-link {
+  margin-right: 1.5rem;
+}
+
+.navbar .dropdown-menu .dropdown-item {
+  font-size: 1.8rem !important;
+}
+
+
+.collapse a {
+  transition: color 0.7s;
+}
+
+.collapse a:hover {
+  color: var(--color-red);
+}
+
+/* Hero Section */
+.hero-title {
+  font-size: 5.5rem;
+  line-height: 6rem;
+  margin-bottom: 1.5rem;
+  color: var(--color-letter-strong);
+}
+
+.text-hero {
+  font-size: 4rem;
+  color: var(--color-letter-light);
+  margin: 0.5rem 0;
+  line-height: 1.4;
+}
+
+.btn-ver {
+  font-size: 2rem; 
+  padding: 1.2rem 3rem;
+  border-radius: 1rem;
+  font-weight: bold;
+  background-color: var(--color-red);
+  color: var(--color-light);
+  border: none;
+  text-align: center;
+  transition: background-color 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.btn-ver:hover {
+  background-color: var(--color-light-red);
+}
+
+.container-hero img {
+  width: 40rem;
+  height: 45rem;
+}
+
+.container-hero img:hover {
+  animation: fadeIn 1.5s ease-in-out alternate infinite;
+}
+
+/* Animação */
+@keyframes fadeIn {
+  0%,
+  100% {
+    scale: 1;
+  }
+  50% {
+    scale: 1.1;
+    filter: drop-shadow(var(--color-dark-background) 0 0 2rem);
+  }
+}
+
+/* Tabelas */
+.table-custom {
+  border-radius: 1rem;
+  overflow: hidden;
+  color: white;
+  text-align: center;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.table-custom thead th {
+  background-color: var(--color-red);
+  color: var(--color-light);
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.table-custom td {
+  border: 1px solid var(--color-light);
+  /* pra ficar sem borda */
+}
+
+/* Seção do Sobre */
+.about-section {
+  border-radius: 4rem;
+  margin: 1.5rem;
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--color-light);
+}
+
+.section-title {
+  font-size: 4rem;
+  color: var(--color-red);
+  margin-bottom: 2rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.project-wrapper {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.project-button {
+  background-color: var(--color-dark-background);
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  color: var(--color-letter);
+  border-radius: 0.5rem;
+  display: inline-block;
+  margin: 2rem;
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  margin: 0 auto;
+  max-width: 120rem;
+}
+
+.description {
+  width: 60%;
+  text-align: left;
+}
+
+.description p {
+  line-height: 1.6;
+}
+
+.description strong {
+  color: var(--color-letter-strong);
+}
+
+.materials-button {
+  margin: 2rem auto 0 auto;
+  background-color: var(--color-red);
+  color: var(--color-light);
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.materials-button:hover {
+  background-color: var(--color-light-red);
+}
+
+.dimensions {
+  margin: 0 auto;
+  width: 35%;
+  text-align: center;
+}
+
+.dimensions-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+
+/* Ideia */
+.ideia-text {
+  width: 100%;
+  max-width: 120rem;
+  padding: 3rem;
+  margin: 2rem auto 0 auto;
+  background-color: var(--color-dark-background);
+  border-radius: 1rem;
+}
+
+.ideia-text p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  text-align: justify;
+}
+
+.sobre-cards-container {
+  width: 90%;
+  max-width: 120rem;
+  margin: 4rem auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.card-custom {
+  background-color: var(--color-light);
+  padding: 2rem;
+  border-radius: 1.6rem;
+  box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.1);
+  flex: 1;
+  min-width: 25rem;
+  max-width: 35rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease;
+  justify-content: center;
+}
+
+.card-custom:hover {
+  transform: scale(1.03);
+}
+
+.card-title {
+  font-size: 2rem;
+  margin-bottom: 1.6rem;
+  font-weight: bold;
+}
+
+.card-custom h2.card-title {
+  color: var(--color-red);
+}
+
+.card-text {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.card-image {
+  width: 80%;
+  height: auto;
+  max-height: 20rem;
+  border-radius: 1rem;
+  object-fit: contain;
+  margin: 1rem 0;
+}
+
+
+
+
+
+/* Seção do grupo */
+.grupo-section {
+  background-color: var(--color-light);
+  padding: 4rem;
+  border-radius: 2rem;
+  max-width: 120rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.titulo-equipe {
+  font-size: 3.5rem;
+  color: var(--color-red);
+  font-weight: bold;
+}
+
+.estrelas {
+  font-size: 2.5rem;
+  color: gold;
+  margin-bottom: 2rem;
+}
+
+.grupo-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.integrante {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.integrante img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 0.3rem solid var(--color-red);
+  transition: transform 0.3s;
+}
+
+.integrante img:hover {
+  transform: scale(1.1);
+}
+
+.nome-integrante {
+  margin-top: 1rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--color-letter-strong);
+}
+
+/* Botão interativo */
+.expandir-texto {
+  background-color: var(--color-red);
+  color: var(--color-light);
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.expandir-texto:hover {
+  background-color: var(--color-light-red);
+}
+
+/*texto que deveria aparecer mais n funciona quero morrer (let se vc conseguir arrumar vou ficar mt feliz) */
+.texto-apresentacao {
+  display: none;
+  background-color: var(--color-letter); 
+  color: var(--color-letter-strong);
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  font-size: 1.8rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  border: 0.3rem solid var(--color-dark-background);
+}
+  
+
+/* Ativar a aparição do texto */
+.expandir-texto:active + .texto-apresentacao {
+  display: block;
+}
+
+
+
+
+
+
+
+/* Arma */
+.arma-section {
+  width: 100%;
+  max-width: 130rem;
+  margin: 2rem auto;
+  padding: 2rem 1rem;
+  background-color: var(--color-light-red);
+  border-radius: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.1);
+}
+
+.arma-overlay {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.arma-title {
+  font-size: 4rem;
+  color: var(--color-body-background);
+  margin-bottom: 2rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.arma-conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  max-width: 120rem;
+  gap: 2rem;
+}
+
+.arma-text {
+  flex: 1;
+  text-align: justify;
+  font-size: 1.8rem;
+  line-height: 1.6;
+  background-color: var(--color-body-background);
+  color: var(--color-letter-strong);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.arma-text p {
+  margin-bottom: 1.5rem;
+}
+
+.arma-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.arma-image img {
+  max-width: 150%;
+  height: auto;
+  animation: fadeIn 3s ease-in-out alternate infinite;
+}
+
+.arma-image img {
+  border: none;
+  box-shadow: none;
+  display: inline-block;
+}
+
+/* Accordion */
+.accordion {
+  width: 50%;
+  max-width: 80rem;
+  transition: none;
+}
+
+.custom-accordion-button {
+  font-size: 1.6rem !important;
+}
+
+.accordion-body {
+  font-size: 1.4rem; 
+}
+
+/* Galeria */
+#carouselIndicators {
+  max-width: 80rem;
+}
+
+.galeria-white{
+  color: #4a4032 !important;
+}
+
+.galeria-section,
+.hardware-section {
+  background-image: url("../imagens/background.png") ;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-light);
+}
+
+.galeria-title {
+  font-size: 4rem;
+  color: var(--color-letter-strong);
+  margin-bottom: 2rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Seta do Carousel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  padding: 1.5rem;
+}
+
+.carousel-indicators {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 1rem 0;
+  border-radius: 1rem;
+}
+
+.carousel-indicators .active {
+  background-color: var(--color-red);
+}
+
+/* Vídeo */
+.video-container {
+  margin-top: 2rem;
+}
+
+.video-box {
+  background-color: var(--color-dark-background);
+  border-radius: 1.2rem;
+  padding: 1rem;
+}
+
+/* Rodapé */
+footer {
+  background-color: var(--color-light);
+  padding: 1rem 0;
+  border-top: 0.2rem solid #ccc;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+  flex-wrap: wrap;
+}
+
+.footer-logo img {
+  height: 6rem;
+}
+
+.footer-logo p {
+  margin: 0.5rem 0 0;
+  font-size: 2rem;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: var(--color-letter-strong);
+}
+
+.footer-links a:hover {
+  color: var(--color-red);
+}
+
+.footer-organization {
+  text-align: right;
+}
+
+.footer-organization p {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.footer-organization img {
+  height: 3rem;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .description,
+  .dimensions {
+    width: 100%;
+    text-align: center;
+  }
+  .arma-conteudo {
+    flex-direction: column;
+  }
+  .arma-text {
+    order: 2;
+  }
+  .arma-image {
+    order: 1;
+  }
+}
